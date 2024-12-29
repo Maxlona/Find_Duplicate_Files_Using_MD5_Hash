@@ -6,11 +6,11 @@ This is a prototype using .NET/C# Windows Forms,
 
 ## How it works!
 
-The algorithm used in this POC is to calculate a unique hash of all files found without regard to its extension using SHA265 
+- The algorithm used in this POC is to calculate a unique hash of all files found (using its binary content) without regard to its extension using SHA265 
 - More about SHA265 here -> https://debugpointer.com/security/sha256-overview)
-- Build a collection with all hashes
-- Compare generated hash (if found) flag as duplicate, and calculate it's size on the disk space
-- Calculate overall duplicate files' disk space
+- Build a collection with all hashes using a global collection
+- Compare generated hash (if found) flag as duplicate, and calculate its size on the disk space
+- Calculate overall duplicate files' disk space (potential file saved if deleted)
 - Delete all duplicate files or choose certain files to delete
 - Move Files to the Recycle Bin, or delete it forever <please see screenshot>
 
