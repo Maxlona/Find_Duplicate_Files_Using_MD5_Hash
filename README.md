@@ -4,6 +4,8 @@ This tool will help you find duplicate files in a folder. You can search the fol
 
 This is a prototype using .NET/C# Windows Forms,
 
+## How it works!
+
 The algorithm used in this POC is to calculate a unique hash of all files found without regard to its extension using SHA265
 - Build a collection with all hashes
 - Compare generated hash (if found) flag as duplicate, and calculate it's size on the disk space
